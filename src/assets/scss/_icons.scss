@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "iconfont";
+  src: url("../fonts/iconfont.eot?t=1522237704791"); /* IE9*/
+  src: url("../fonts/iconfont.eot?t=1522237704791#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url(data:application/x-font-woff) format("woff"),
+    url("../fonts/iconfont.ttf?t=1522237704791") format("truetype"),
+    /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+      url("../fonts/iconfont.svg?t=1522237704791#iconfont") format("svg"); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-backtop:before {
+  content: "\e689";
+}
+
+.icon-personal:before {
+  content: "\e610";
+}
+
+.icon-scan:before {
+  content: "\e609";
+}
+
+.icon-clear:before {
+  content: "\e622";
+}
+
+.icon-msg:before {
+  content: "\e7a8";
+}
+
+.icon-category:before {
+  content: "\e7f9";
+}
+
+.icon-search:before {
+  content: "\e616";
+}
+
+.icon-delete:before {
+  content: "\e6ac";
+}
+
+.icon-service:before {
+  content: "\e643";
+}
+
+.icon-setting:before {
+  content: "\e64c";
+}
+
+.icon-back:before {
+  content: "\e60f";
+}
+
+.icon-shop:before {
+  content: "\e624";
+}
+
+.icon-close:before {
+  content: "\e60c";
+}
+
+.icon-more:before {
+  content: "\e85c";
+}
+
+.icon-home:before {
+  content: "\e699";
+}
+
+.icon-collect:before {
+  content: "\e78c";
+}
+
+.icon-cart:before {
+  content: "\e635";
+}
