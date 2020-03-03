@@ -6,7 +6,7 @@
         </router-link>
         <router-link class="g-tabbar-item" to="/category">
             <i class="iconfont icon-category"></i>
-            <span>分类页</span>
+            <span>分类</span>
         </router-link>
         <router-link class="g-tabbar-item" to="/cart">
             <i class="iconfont icon-cart"></i>
