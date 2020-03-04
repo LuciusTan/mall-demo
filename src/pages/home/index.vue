@@ -3,7 +3,10 @@
     <header class="g-header-container">
       <home-header></home-header>
     </header>
-    <div></div>
+    <me-scroll>
+      <home-slider></home-slider>
+      <home-nav></home-nav>
+    </me-scroll>
     <div class="g-backtop-container"></div>
     <router-view></router-view>
   </div>
@@ -11,10 +14,17 @@
 
 <script>
   import HomeHeader from './header';
+  import HomeSlider from './slider';
+  import MeScroll from 'base/scroll';
+  import HomeNav from './nav';
+
   export default {
     name: 'Home',
     components: {
-      HomeHeader
+      HomeHeader,
+      HomeSlider,
+      MeScroll,
+      HomeNav
     }
   };
 </script>
