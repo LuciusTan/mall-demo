@@ -3,9 +3,10 @@
     <header class="g-header-container">
       <home-header></home-header>
     </header>
-    <me-scroll>
-      <home-slider></home-slider>
+    <me-scroll :data="recommends" pullDown @pull-down="pullToRefresh">
+      <home-slider ref="slider"></home-slider>
       <home-nav></home-nav>
+      <home-recommend @loaded="getRecommends"></home-recommend>
     </me-scroll>
     <div class="g-backtop-container"></div>
     <router-view></router-view>
@@ -17,6 +18,7 @@
   import HomeSlider from './slider';
   import MeScroll from 'base/scroll';
   import HomeNav from './nav';
+  import HomeRecommend from './recommend';
 
   export default {
     name: 'Home',
@@ -24,7 +26,27 @@
       HomeHeader,
       HomeSlider,
       MeScroll,
-      HomeNav
+      HomeNav,
+      HomeRecommend
+    },
+    data() {
+      return {
+        recommends: []
+      };
+    },
+    methods: {
+      updateScroll() {
+
+      },
+      getRecommends(recommends) {
+        this.recommends = recommends;
+      },
+      pullToRefresh(end) {
+        this.$refs.slider.update().then(end);
+        // setTimeout(() => {
+        //   end();
+        // }, 1000);
+      }
     }
   };
 </script>
